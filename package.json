@@ -1,0 +1,17 @@
+{
+  "name": "image-uploader",
+  "version": "1.0.0",
+  "description": "a node image uploader app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "wzh",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.0",
+    "multer": "^1.3.0"
+  }
+}

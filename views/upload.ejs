@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+<div class="row" style="margin-top:20px;">
+  <div class="col s12 m6 offset-m3">
+    <div class="card">
+      <div class="card-content">
+        <div class="black-text">
+          <span class="card-title">Image Uploader</span>
+          <p><%= typeof msg != 'undefined' ? msg : '' %></p>
+        </div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <div class="file-field input-field">
+            <div class="btn grey darken-4">
+              <span>File</span>
+              <input name="myImage" type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+          <button type="submit" class="btn grey darken-4" >Submit</button>
+        </form>
+        <br>
+        <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+      </div>
+    </div>
+  </div>
+</div>
+<% include ./partials/footer %>

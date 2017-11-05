@@ -1,0 +1,9 @@
+.newContainer {
+  padding: 0 60px;
+}
+
+.card-img{
+  height:300px;
+  overflow:hidden;
+  object-fit:cover;
+}

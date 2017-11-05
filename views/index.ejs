@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<div class="row" style="margin-top:20px;">
+  <% if(images){ %>
+    <% images.forEach(function(image){ %>
+        <div class="col s12 m4 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="uploads/<%= image.filename %>" class="card-img">
+              <span class="card-title"><%= image.filename %></span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+    <% }) %>
+  <% } %>
+</div>
+
+
+<% include ./partials/footer %>
